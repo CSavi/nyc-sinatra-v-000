@@ -18,6 +18,6 @@ class LandmarksController < ApplicationController
     @landmark = Landmark.create(params[:landmark])
     @landmark.save
 
-    redirect to "/landmarks"
+    redirect to "/landmarks/show"
   end
 end
