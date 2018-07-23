@@ -2,7 +2,7 @@
 
 <form action="/figures/<%=@figure.id%>" method="post">
   <input type="hidden" name="_method" value="PATCH">
-  <label for="figure_name">Name <input type="text" id="figure_name" name="figure[name]" value="@figure.name %>"</label>
+  <label>Figure Name: <input type="text" id="figure_name" name="figure[name]" value="<%= @figure.name %>"</label>
 
   <br></br>
   <br></br>
